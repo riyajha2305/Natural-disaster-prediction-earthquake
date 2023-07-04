@@ -138,6 +138,7 @@ Once the SVM model has been trained on the data, it can be used to predict the m
 
 
 **SVM plot using matplotlib.pyplot library(python)**
+<br>
 ![svm](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/SVM_plot.png)
 
 
