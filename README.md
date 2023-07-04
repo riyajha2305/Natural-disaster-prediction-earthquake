@@ -62,14 +62,15 @@ These are just a few examples of the many ways that machine learning models can 
 
 **Software used**: Tableau
 
-![tableau1](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.10.39.png)
 **1. Earthquake (identified by Event ID) and the number of stations recording it**
+![tableau1](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.10.39.png)
 
-![tableau2](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.10.47.png)
 **2. Earthquake based on its magnitude**
+![tableau2](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.10.47.png)
 
-![tableau3](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.10.54.png)
 **3. Earthquake based on its magnitude type**
+![tableau3](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.10.54.png)
+
 
 
 # Implementation
@@ -98,9 +99,9 @@ In this situation, we have used multiple linear regression to model the relation
 Once the model has been fit to the data, we can use it to predict the magnitude of a new earthquake given its latitude, longitude, depth, and the number of seismic stations that recorded it. This can be useful for earthquake monitoring and early warning systems, as well as for understanding the underlying causes of earthquakes and improving our ability to predict them in the future.
 
 
+**Multiple linear regression plot using seaborn library(python)**
 ![linear regression](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.13.27.png)
 
-**Multiple linear regression plot using seaborn library(python)**
 
 The linear regression equation used in our multiple linear regression model for earthquake magnitude prediction with latitude, longitude, depth, and number of seismic stations as independent variables can be written as:
 
@@ -136,9 +137,9 @@ SVM can handle both linear and non-linear data by using different kernels that t
 Once the SVM model has been trained on the data, it can be used to predict the magnitude of a new earthquake given its features (latitude, longitude, depth, and number of seismic stations). This can be useful for predicting the magnitude of earthquakes in real-time and for better understanding the factors that contribute to earthquake occurrence.
 
 
+**SVM plot using matplotlib.pyplot library(python)**
 ![svm](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/SVM_plot.png)
 
-**SVM plot using matplotlib.pyplot library(python)**
 
 The predicted values from SVM model when evaluated using mse and r2 metrics:
 
@@ -156,12 +157,14 @@ Naive Bayes classifiers are highly scalable, requiring a number of parameters li
 In the code, we used the Naive Bayes classifier to predict the magnitude of earthquakes based on their latitude, longitude and number of monitoring stations. We split the data into training and testing sets, trained the Naive Bayes model on the training data, and evaluated its performance on the test data using the accuracy score, confusion matrix and classification report
 
 
+**Actual vs Predicted**
 ![NaiveBayes1](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.13.54.png)
 ![NaiveBAyes1.2](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.14.01.png)
-**Actual vs Predicted**
 
-![NaiveBayes2](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.14.08.png)
+
 **Heatmap of Confusion Matrix**
+![NaiveBayes2](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.14.08.png)
+
 
 **Accuracy: 0.9853947125161767**
 <br>
@@ -177,11 +180,13 @@ The basic idea behind random forest is to create multiple decision trees, each t
 
 In the code we provided earlier, we used the random forest algorithm to predict the magnitude of earthquakes based on their latitude, longitude, depth, and number of monitoring stations. We split the data into training and testing sets, trained the random forest model on the training data, and evaluated its performance on the test data using the mean squared error (MSE) and R-squared (R2) score.
 
-![Random Forest](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.14.12.png)
 **Actual vs Predicted**
+![Random Forest](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.14.12.png)
 
-![Random Forest 2](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.14.16.png)
+
 **Feature Importance Plot**
+![Random Forest 2](https://github.com/riyajha2305/Natural-disaster-prediction-earthquake/blob/main/images/Screenshot%202023-07-04%20at%2010.14.16.png)
+
 
 The results we obtained from the random forest model were as follows:
 
